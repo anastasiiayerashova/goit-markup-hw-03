@@ -109,10 +109,6 @@ ol {
 }
 
 .section {
-  display: flex;
-  align-items: center;
-  max-width: 100%;
-  justify-content: center;
   padding: 120px 0;
 }
 
@@ -125,6 +121,7 @@ ol {
   color: #fff;
   margin: 0 auto;
   padding-bottom: 48px;
+  max-width: 496px;
 }
 
 .button {
@@ -137,11 +134,13 @@ ol {
   letter-spacing: 0.04em;
   cursor: pointer;
   margin: 0 auto;
-  display: flex;
+  display: block;
   border-radius: 4px;
   padding: 16px 32px;
   flex-shrink: 0;
-  justify-content: center;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 
 .button:hover,
@@ -176,10 +175,14 @@ ol {
   list-style-type: none;
   display: flex;
   gap: 24px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   align-items: flex-start;
   justify-content: flex-start;
   width: calc(100%-72px) / 4;
+}
+
+.qualities-list {
+  width: calc((100% - 72px) / 4);
 }
 
 .features {
@@ -197,10 +200,6 @@ ol {
   background-color: #f4f4fd;
 }
 
-.third-section-container {
-  padding: 120px 0;
-}
-
 .second-header {
   font-weight: 700;
   font-size: 36px;
@@ -216,9 +215,8 @@ ol {
   list-style-type: none;
   display: flex;
   gap: 24px;
-  box-sizing: border-box;
+
   width: calc(100%-72px) / 4;
-  flex-wrap: wrap;
 }
 
 .fourth-section-list {
@@ -232,7 +230,7 @@ ol {
 
 .picture {
   background-color: #ffffff;
-  width: calc(100%-72px) / 4;
+  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -246,7 +244,7 @@ ol {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   text-align: center;
 }
 
@@ -263,19 +261,15 @@ ol {
   background-color: #ffffff;
 }
 
-.fourth-section-container {
-  padding: 120px 0;
-}
-
 .fourth-section-list {
+  display: flex;
   flex-wrap: wrap;
+  column-gap: 24px;
   row-gap: 48px;
 }
 
 .fourth-section-picture {
-  background-color: #ffffff;
-  box-sizing: border-box;
-  width: calc(100%-48px) / 3;
+  width: calc((100% - 48px) / 3);
 }
 
 .apps-descr {
@@ -291,8 +285,6 @@ ol {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-
-  text-align: flex-start;
 }
 
 .fourth-section-descr {
@@ -306,7 +298,7 @@ ol {
 
 .footer {
   background-color: #2e2f42;
-  padding: 100px 1020px 100px 156px;
+  padding: 100px 0;
 }
 
 .footer-web-logo {
@@ -339,6 +331,7 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
 }
 
 h1,
