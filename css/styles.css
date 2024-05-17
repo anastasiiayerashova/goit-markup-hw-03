@@ -105,7 +105,7 @@ ol {
 
 .first-section {
   background-color: #2e2f42;
-  height: 600px;
+  padding: 188px 0;
 }
 
 .section {
@@ -123,8 +123,8 @@ ol {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-
-  margin-bottom: 48px;
+  margin: 0 auto;
+  padding-bottom: 48px;
 }
 
 .button {
@@ -176,6 +176,7 @@ ol {
   list-style-type: none;
   display: flex;
   gap: 24px;
+  padding-bottom: 8px;
   align-items: flex-start;
   justify-content: flex-start;
   width: calc(100%-72px) / 4;
@@ -188,6 +189,8 @@ ol {
   letter-spacing: 0.02em;
   color: #434455;
   display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .third-section {
